@@ -4,7 +4,7 @@ import camp.nextstep.edu.missionutils.Console;
 
 import java.util.List;
 
-public class View {
+public class RacingView {
 
     public void printCarsManual() {
         System.out.println("경주 할 자동차 이름(이름은 쉼표(,) 기준으로 구분)");
@@ -28,9 +28,9 @@ public class View {
         System.out.println("[ERROR] " + s);
     }
 
-    public void printScore(Car[] cars) {
-        for (Car car : cars) {
-            System.out.println(car.getName() + " : " + car.currentPosition());
+    public void printScore(List<String> carScores) {
+        for(String carScore : carScores){
+            System.out.println(carScore);
         }
         System.out.println();
     }

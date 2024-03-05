@@ -1,12 +1,10 @@
 package racingcar;
 
-import camp.nextstep.edu.missionutils.Console;
-
 public class Application {
     public static void main(String[] args) {
-        Controller controller = new Controller();
+        RacingController controller = new RacingController();
 
-        controller.racingCar();
+        controller.startGame();
 
     }
 }

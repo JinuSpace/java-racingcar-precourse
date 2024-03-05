@@ -3,22 +3,14 @@ package racingcar;
 import camp.nextstep.edu.missionutils.Randoms;
 
 public class Car {
+
+    private static final int MIN_RANGE = 0;
+    private static final int MAX_RANGE = 9;
     private final String name;
     private int position = 0;
 
-    private final int MIN_RANGE = 0;
-    private final int MAX_RANGE = 9;
-
     public Car(String name) {
         this.name = name;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public int getPosition() {
-        return this.position;
     }
 
     public void attemptRace() {
@@ -35,4 +27,14 @@ public class Car {
 
         return sb.toString();
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getPosition() {
+        return this.position;
+    }
+
+
 }
