@@ -1,6 +1,8 @@
 package racingcar;
 public class Util {
-    public int changeCount(String input) throws IllegalArgumentException {
+    private Util(){
+    }
+    public static int changeCount(String input) throws IllegalArgumentException {
         int count = Integer.parseInt(input);
 
         checkCountRange(count);
@@ -8,7 +10,7 @@ public class Util {
         return count;
     }
 
-    public void checkCountRange(int count) {
+    public static void checkCountRange(int count) {
         if (count < 0) {
             throw new IllegalArgumentException();
         }

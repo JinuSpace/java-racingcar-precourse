@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class RacingService {
-    private final Util util = new Util();
-
     public Cars saveCars(String input) throws IllegalArgumentException {
 
         return new Cars(input);
@@ -19,7 +17,7 @@ public class RacingService {
 
     public int changeCount(String input) throws IllegalArgumentException {
 
-        return util.changeCount(input);
+        return Util.changeCount(input);
     }
 
     public String findWinners(Cars cars) {
